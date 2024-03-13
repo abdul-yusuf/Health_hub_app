@@ -54,6 +54,8 @@ fullscreen = 0
 # (list) Permissions
 android.permissions = INTERNET
 
+android.skip_update = False
+
 # (int) Android API to use
 #android.api = 14
 
