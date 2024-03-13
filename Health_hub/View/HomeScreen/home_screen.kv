@@ -1,0 +1,70 @@
+<HomeScreenView>
+    md_bg_color: self.theme_cls.backgroundColor
+    MDScrollView:
+        # md_bg_color: app.theme_cls.surfaceColor
+        # padding: ('10dp', '10dp', '10dp', '300dp')
+        size_hint: 1, None
+        size: Window.width, Window.height
+        # do_scroll_y: True
+
+        MDBoxLayout:
+            md_bg_color: app.theme_cls.primaryColor
+            orientation: 'vertical'
+            padding: ('10dp', '100dp', '10dp', '300dp')
+            adaptive_height: True
+            spacing: "10dp"
+
+            MDLabel:
+                padding: ('10dp', '10dp', '10dp', '100dp')
+                text: "Hi Abdul"
+                color: app.theme_cls.backgroundColor
+                bold: True
+            
+            MDCard:
+                size_hint_y: None
+                height: dp(380)
+                orientation: 'vertical'
+                FitImage:
+                    size_hint_x: 1
+                    source: "assets/images/R.jpg"
+                    radius: [self.parent.radius[0], self.parent.radius[0], "0dp", "0dp"]
+                    # allow_stretch: True
+                MDBoxLayout:
+                    size_hint_y: None
+                    height: dp(90)
+                    padding: ('10dp', '10dp', '10dp', '10dp')
+                    MDLabel:
+                        text: "Breakfast"
+                        color:        
+            MDCard:
+                size_hint_y: None
+                height: dp(380)
+                orientation: 'vertical'
+                FitImage:
+                    size_hint_x: 1
+                    source: "assets/images/R.jpg"
+                    radius: [self.parent.radius[0], self.parent.radius[0], "0dp", "0dp"]
+                    # allow_stretch: True
+                MDBoxLayout:
+                    size_hint_y: None
+                    height: dp(90)
+                    padding: ('10dp', '10dp', '10dp', '10dp')
+                    MDLabel:
+                        text: "Lunch"
+                        color:        
+            MDCard:
+                size_hint_y: None
+                height: dp(380)
+                orientation: 'vertical'
+                FitImage:
+                    size_hint_x: 1
+                    source: "assets/images/R.jpg"
+                    radius: [self.parent.radius[0], self.parent.radius[0], "0dp", "0dp"]
+                    # allow_stretch: True
+                MDBoxLayout:
+                    size_hint_y: None
+                    height: dp(90)
+                    padding: ('10dp', '10dp', '10dp', '10dp')
+                    MDLabel:
+                        text: "Dinner"
+                        color:        
